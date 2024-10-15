@@ -1,0 +1,192 @@
+// Reset
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Base
+* {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  padding-top: 80px;
+
+  @media (max-width: 768px) {
+    padding-top: 73px;
+  }
+}
+
+.container {
+  max-width: calc(1352px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-gray: #f2f2f2;
+  --color-black-20: rgba(0, 0, 0, 0.2);
+  --color-black: #000000;
+  --color-linear-horizontal: linear-gradient(to right, #000000, #0460d9);
+  --color-linear-vertical: linear-gradient(#000000, #0460d9);
+  --color-blue: #0460d9;
+  --color-yellow: #f2e205;
+  --color-green: #9abf49;
+  --color-red: #f21d2f;
+
+  --weight-extra-bold: 800;
+  --weight-bold: 700;
+  --weight-medium: 500;
+  --weight-regular: 400;
+
+  --border-default: 2px solid #0460d9;
+  --border-hover: 2px solid #000000;
+  --border-small: 1px solid #0460d9;
+
+  --font: "Noto Sans", Arial, Helvetica, sans-serif;
+
+  --radius-10: 10px;
+  --radius-circle: 100%;
+
+  --transition-default: 0.4s;
+  --transition-simple: 0.2s;
+
+  --shadow-default: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
