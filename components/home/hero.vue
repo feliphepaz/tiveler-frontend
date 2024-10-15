@@ -34,12 +34,12 @@
       align-items: center;
       gap: 30px;
 
-      > :deep(h1) {
+      :deep(h1) {
         max-width: 620px;
         text-align: center;
       }
 
-      > :deep(p) {
+      :deep(p) {
         max-width: 610px;
         text-align: center;
       }
@@ -53,11 +53,11 @@
 
     @media (max-width: 1024px) {
       .container {
-        > :deep(h1) {
+        :deep(h1) {
           max-width: 580px;
         }
 
-        > :deep(p) {
+        :deep(p) {
           max-width: 590px;
         }
       }

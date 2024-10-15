@@ -4,5 +4,6 @@
     <HomeProductHub />
     <HomeAbout />
     <HomeCallToAction />
+    <HomeFAQ />
   </main>
 </template>

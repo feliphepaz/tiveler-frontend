@@ -20,7 +20,7 @@
       <path
         d="M1 9L5 5L1 1"
         :stroke="theme === 'dark' ? 'black' : 'white'"
-        strokeWidth="2"
+        stroke-width="2"
       />
     </svg>
 

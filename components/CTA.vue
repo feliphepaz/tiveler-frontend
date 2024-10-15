@@ -10,7 +10,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M11 18L3 10L11 2" stroke="white" strokeWidth="4" />
+      <path d="M11 18L3 10L11 2" stroke="white" stroke-width="4" />
     </svg>
 
     <Text
@@ -30,7 +30,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M2 18L10 10L2 2" stroke="white" strokeWidth="4" />
+      <path d="M2 18L10 10L2 2" stroke="white" stroke-width="4" />
     </svg>
   </button>
 </template>

@@ -26,8 +26,8 @@
       align-items: center;
       gap: 30px;
 
-      > :deep(h2),
-      > :deep(p) {
+      :deep(h2),
+      :deep(p) {
         text-align: center;
       }
     }

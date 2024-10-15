@@ -16,8 +16,8 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 15H30" stroke="black" strokeWidth="2" />
-        <path d="M15 30L15 -1.07288e-06" stroke="black" strokeWidth="2" />
+        <path d="M0 15H30" stroke="black" stroke-width="2"/>
+        <path d="M15 30L15 -1.07288e-06" stroke="black" stroke-width="2"/>
       </svg>
 
       <svg
@@ -28,7 +28,7 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 15H30" stroke="white" strokeWidth="2" />
+        <path d="M0 15H30" stroke="white" stroke-width="2"/>
       </svg>
     </button>
     <div
@@ -69,10 +69,11 @@
     > button {
       display: flex;
       align-items: center;
+      text-align: left;
       position: relative;
       width: 100%;
       border: none;
-      padding: 20px;
+      padding: 20px 60px 20px 20px;
       background: var(--color-gray);
       cursor: pointer;
       transition: var(--transition-simple);
@@ -94,6 +95,11 @@
         right: 20px;
         opacity: 0;
         transition: var(--transition-simple);
+
+        @media (max-width: 768px) {
+          width: 20px;
+          height: 20px;
+        }
       }
 
       &.dropdown-disabled {
