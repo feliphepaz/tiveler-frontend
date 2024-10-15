@@ -43,7 +43,7 @@
     highlight?: 'none' | 'default' | 'simple' | 'high'
   }
 
-  const props = withDefaults(defineProps<Props>(), {
+  withDefaults(defineProps<Props>(), {
     variation: 'none',
     theme: 'dark',
     highlight: 'default'

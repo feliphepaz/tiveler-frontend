@@ -32,7 +32,7 @@
     color: 'white' | 'gray' | 'black-20' | 'black' | 'linear-horizontal' | 'linear-vertical' | 'blue' | 'yellow' | 'green'| 'red'
   }
 
-  const props = withDefaults(defineProps<Props>(), {
+  withDefaults(defineProps<Props>(), {
     variation: 'none'
   })
 </script>

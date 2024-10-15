@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="href || ''" :class="`custom-link-component ${type}`">
+  <NuxtLink :to="to || ''" :class="`custom-link-component ${type}`">
     <Text
       as="span"
       type="text"
@@ -42,14 +42,14 @@
 
 <script setup lang="ts">
   interface Props {
-    href: string
+    to: string
     type: 'redirect' | 'scroll'
     icon?: 'show' | 'hidden'
     theme?: 'dark' | 'light'
     weight?: 'regular' | 'bold'
   }
 
-  const props = withDefaults(defineProps<Props>(), {
+  withDefaults(defineProps<Props>(), {
     icon: 'hidden',
     theme: 'dark',
     weight: 'regular'

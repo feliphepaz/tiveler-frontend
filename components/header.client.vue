@@ -4,50 +4,48 @@
   >
     <div class="container">
       <div class="header-left">
-        <NuxtLink class="logo" href="/">
+        <NuxtLink to="/" class="logo">
           <img
             :src="logo"
             alt="Tiveler"
-            width={120}
-            height={30}
           />
         </NuxtLink>
 
         <nav class="menu">
           <ul>
             <li>
-              <CustomLink href="/" type="redirect">
+              <CustomLink to="/" type="redirect">
                 Início
               </CustomLink>
             </li>
 
             <li>
-              <CustomLink href="#produto" type="scroll" icon="show">
+              <CustomLink to="#produto" type="scroll" icon="show">
                 Produto
               </CustomLink>
             </li>
 
             <li>
-              <CustomLink href="#sobre" type="scroll" icon="show">
+              <CustomLink to="#sobre" type="scroll" icon="show">
                 Sobre
               </CustomLink>
             </li>
 
             <li>
-              <CustomLink href="/contato" type="redirect">
+              <CustomLink to="/contato" type="redirect">
                 Contato
               </CustomLink>
             </li>
           </ul>
 
           <div class="header-ctas-mobile">
-            <NuxtLink href="/login">
+            <NuxtLink to="/login">
               <CTA type="small" theme="light" highlight="simple">
                 Entrar
               </CTA>
             </NuxtLink>
 
-            <NuxtLink href="/cadastro">
+            <NuxtLink to="/cadastro">
               <CTA type="small" highlight="simple">
                 Experimente agora mesmo
               </CTA>
@@ -59,7 +57,7 @@
       <div class="header-right">
         <button
           :class="`menu-icon menu-${getMenuStatus()}`"
-          @click="() => setMenuType"
+          @click="setMenuType"
         >
           <svg
             width="32"
@@ -76,12 +74,12 @@
         </button>
 
         <div class="header-ctas-desktop">
-          <NuxtLink href="/login">
+          <NuxtLink to="/login">
             <CTA type="small" theme="light" highlight="simple">
               Entrar
             </CTA>
           </NuxtLink>
-          <NuxtLink href="/cadastro">
+          <NuxtLink to="/cadastro">
             <CTA type="small" highlight="simple">
               Experimente agora mesmo
             </CTA>
@@ -93,9 +91,9 @@
 </template>
 
 <script setup lang="ts">
-  import logo from '@/assets/logos/logo.svg'
   import { useWindowSize } from '~/composables/useWindowSize.';
   import { useWindowScroll } from '~/composables/useWindowScroll';
+  import logo from '@/assets/logos/logo.svg'
 
   const { width } = useWindowSize()
   const { scrollY } = useWindowScroll()
@@ -108,9 +106,9 @@
 
   function setMenuType() {
     if (menuType.value === 'no-effect' || menuType.value === 'desktop') {
-      return 'mobile'
+      menuType.value = 'mobile'
     } else {
-      return 'desktop'
+      menuType.value = 'desktop'
     }
   }
 
@@ -132,7 +130,7 @@
     }
   }
 
-  const props = defineProps<Props>()
+  defineProps<Props>()
 </script>
 
 <style lang="scss" scoped>
@@ -303,7 +301,7 @@
                   align-items: flex-start;
                   padding: 10px 0px;
 
-                  svg {
+                  :deep(svg) {
                     display: none;
                   }
                 }
