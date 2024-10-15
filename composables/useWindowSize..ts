@@ -1,6 +1,6 @@
 export function useWindowSize() {
-  const width = ref<number>(window.innerWidth || 0);
-  const height = ref<number>(window.innerHeight || 0);
+  const width = ref<number>(0);
+  const height = ref<number>(0);
 
   function handleResize() {
     width.value = window.innerWidth,
@@ -8,13 +8,15 @@ export function useWindowSize() {
   }
 
   onMounted(() => {
+    if (!window) return;
     window.addEventListener('resize', handleResize);
     handleResize();
   })
 
   onBeforeUnmount(() => {
+    if (!window) return;
     window.removeEventListener('resize', handleResize);
-  });
+  })
 
   return {
     width,
