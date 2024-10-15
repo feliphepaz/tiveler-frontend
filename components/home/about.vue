@@ -3,8 +3,8 @@
     <div class="container">
       <div class="about-photo">
         <div>
-          <NuxtImg
-            src="office.jpg"
+          <img
+            :src="office"
             alt="Pessoas trabalhando no escritório"
           />
         </div>
@@ -30,6 +30,10 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+  import office from '@/assets/pictures/office.jpg'
+</script>
 
 <style lang="scss" scoped>
   .about-layout {

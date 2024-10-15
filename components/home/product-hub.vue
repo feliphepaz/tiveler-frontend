@@ -73,8 +73,8 @@
       </ul>
       <div class="picture">
         <div>
-          <NuxtImg
-            src="person-notebook.jpg"
+          <img
+            :src="personNotebook"
             alt="Pessoa utilizando o notebook"
           />
         </div>
@@ -88,6 +88,7 @@
   import blackboard from '@/assets/icons/blackboard.svg'
   import calculator from '@/assets/icons/calculator.svg'
   import notebook from '@/assets/icons/notebook.svg'
+  import personNotebook from '@/assets/pictures/person-notebook.jpg'
 </script>
 
 <style lang="scss" scoped>
