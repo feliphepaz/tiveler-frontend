@@ -276,7 +276,7 @@
             width: calc(100% + 20px);
             padding: 20px 40px 40px 40px;
             position: absolute;
-            top: 80px;
+            top: 79px;
             left: -20px;
 
             ul {
@@ -340,11 +340,17 @@
 
     @media (max-width: 768px) {
       .container {
-        .header-left .menu {
-          top: 73px;
+        .header-left {
+          .logo {
+            width: 120px;
+          }
 
-          .header-ctas-mobile {
-            display: flex;
+          .menu {
+            top: 72px;
+
+            .header-ctas-mobile {
+              display: flex;
+            }
           }
         }
 
