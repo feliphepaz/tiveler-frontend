@@ -92,11 +92,11 @@
       line-height: 120%;
     }
 
-    &.text > strong,
+    &.text > :deep(strong),
     &.text.highlight,
-    &.current-text > strong,
+    &.current-text > :deep(strong),
     &.current-text.highlight,
-    &.subtitle > strong,
+    &.subtitle > :deep(strong),
     &.subtitle.highlight {
       font-weight: var(--weight-bold);
     }
