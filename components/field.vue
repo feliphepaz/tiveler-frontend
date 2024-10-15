@@ -145,7 +145,7 @@
       specialCharacter: hasSpecialCharacter,
       number: hasNumber,
       minEightCharacters: minEightCharacters
-    });
+    })
   }
 
   withDefaults(defineProps<Props>(), {

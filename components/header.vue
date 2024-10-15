@@ -91,8 +91,8 @@
 </template>
 
 <script setup lang="ts">
-  import { useWindowSize } from '~/composables/useWindowSize.';
-  import { useWindowScroll } from '~/composables/useWindowScroll';
+  import { useWindowSize } from '~/composables/useWindowSize.'
+  import { useWindowScroll } from '~/composables/useWindowScroll'
   import logo from '@/assets/logos/logo.svg'
 
   const { width } = useWindowSize()
@@ -101,7 +101,7 @@
   const menuType = ref('no-effect')
 
   interface Props {
-    type: 'institutional' | 'product';
+    type: 'institutional' | 'product'
   }
 
   function setMenuType() {
@@ -114,19 +114,19 @@
 
   function getMenuType() {
     if (menuType.value === 'mobile' && width.value <= 1024) {
-      return 'mobile';
+      return 'mobile'
     } else if (menuType.value === 'desktop') {
-      return 'desktop';
+      return 'desktop'
     } else {
-      return 'no-effect';
+      return 'no-effect'
     }
   }
 
   function getMenuStatus() {
     if (menuType.value === 'mobile' && width.value <= 1024) {
-      return 'activated';
+      return 'activated'
     } else {
-      return 'disabled';
+      return 'disabled'
     }
   }
 
