@@ -254,13 +254,13 @@
       .menu
       ul
       li
-      .custom-link-component
+      :deep(.custom-link-component)
       svg {
       animation: showArrow var(--transition-simple) forwards;
     }
 
     &.menu-scrolled {
-      .container .header-left .menu ul li .custom-link-component svg {
+      .container .header-left .menu ul li :deep(.custom-link-component) svg {
         animation: hiddenArrow var(--transition-simple) forwards;
       }
     }
@@ -296,12 +296,12 @@
                   background: var(--color-white);
                 }
 
-                .custom-link-component {
+                :deep(.custom-link-component) {
                   width: 100%;
                   align-items: flex-start;
                   padding: 10px 0px;
 
-                  :deep(svg) {
+                  svg {
                     display: none;
                   }
                 }
@@ -314,7 +314,7 @@
             flex-direction: column;
             gap: 20px;
 
-            .cta-component {
+            :deep(.cta-component) {
               width: calc(100% + 20px);
             }
           }

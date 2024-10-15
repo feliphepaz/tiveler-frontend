@@ -79,7 +79,7 @@
       text-decoration: underline;
     }
 
-    .text-component {
+    :deep(.text-component) {
       text-align: center;
     }
   }

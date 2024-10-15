@@ -79,7 +79,7 @@
           background: var(--color-black-20);
         }
 
-        .text-component {
+        :deep(.text-component) {
           color: var(--color-white);
         }
       }
@@ -91,7 +91,7 @@
         transform: scale(1.08);
         background: var(--color-yellow);
 
-        .text-component {
+        :deep(.text-component) {
           color: var(--color-blue);
         }
       }
