@@ -11,12 +11,11 @@
               />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
-              Acompanhe o progresso de seus pacientes ou alunos
+              Acompanhe o progresso de seus alunos
             </Text>
           </div>
           <Text type="current-text" color="black">
-            Com a nossa ferramenta, você pode acompanhar todo o
-            desenvolvimento do seu cliente.
+            Com a nossa ferramenta, você pode acompanhar todo o desenvolvimento do seu aluno.
           </Text>
         </li>
         <li>

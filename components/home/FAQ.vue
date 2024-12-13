@@ -15,7 +15,7 @@
           <Dropdown response="Lorem ipsum dolor">O que eu posso fazer com a Tiveler?</Dropdown>
         </li>
         <li>
-          <Dropdown response="Lorem ipsum dolor">Não sou psicólogo nem professor. Posso usar a Tiveler?</Dropdown>
+          <Dropdown response="Lorem ipsum dolor">Não sou professor. Posso usar a Tiveler?</Dropdown>
         </li>
         <li>
           <Dropdown response="Lorem ipsum dolor">Como entro em contato?</Dropdown>

@@ -2,12 +2,11 @@
   <section class="hero-layout">
     <div class="container">
       <Text as="h1" type="title" color="black">
-        É psicólogo ou professor? A Tiveler é o que você sempre pediu
+        É professor? A Tiveler é o que você sempre pediu
       </Text>
 
       <Text type="subtitle" color="black">
-        Faça parte do jeito certo de gerenciar seus pacientes ou alunos. Faça
-        parte do que é moderno.
+        Faça parte do jeito certo de gerenciar seus alunos. Faça parte do que é moderno.
       </Text>
 
       <ul class="ctas-list">

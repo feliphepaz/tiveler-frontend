@@ -15,16 +15,10 @@
           Quem somos?
         </Text>
         <Text as="p" type="current-text" color="black">
-          Nascido em São Paulo, no berço das startups, a Tiveler vem com o
-          propósito de ser o software mais utilizado no dia a dia por
-          trabalhadores autônomos, facilitando a gestão, principalmente de
-          pacientes e alunos.
+          Nascido em São Paulo, no berço das startups, a Tiveler vem com o propósito de ser o software mais utilizado no dia a dia de profissionais da educação, facilitando a gestão das aulas, alunos e receitas.
           <br />
           <br />
-          Esqueça agora mesmo planilhas e cadernos! Com a gente, você pode ter
-          todo o controle de suas aulas, temas discutidos em sessões e até
-          pagamentos de forma organizada e digital. Ah, e claro, tudo isso
-          feito com muito ❤️
+          Esqueça agora mesmo planilhas e cadernos! Com a gente, você pode ter todo o controle de suas aulas, conteúdos ministrados e até pagamentos de forma organizada e digital. Ah, e claro, tudo isso feito com muito ❤️
         </Text>
       </div>
     </div>
