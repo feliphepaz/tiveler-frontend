@@ -52,7 +52,7 @@
         :checked="showPassword"
       />
       <label for="show-password">
-        <Text type="caption" color="black"> Mostrar senha </Text>
+        <Text type="caption" color="black">Mostrar senha</Text>
       </label>
     </div>
 
@@ -62,19 +62,19 @@
 
     <ul v-if="type === 'new-password'" class="password-requirements">
       <li :class="validPassword.upperCase ? 'validated' : ''">
-        <Text as="span" type="text" color="black"> Letra maiúscula </Text>
+        <Text as="span" type="text" color="black">Letra maiúscula</Text>
       </li>
       <li :class="validPassword.lowerCase ? 'validated' : ''">
-        <Text as="span" type="text" color="black"> Letra minúscula </Text>
+        <Text as="span" type="text" color="black">Letra minúscula</Text>
       </li>
       <li :class="validPassword.specialCharacter ? 'validated' : ''">
-        <Text as="span" type="text" color="black"> Caractere especial </Text>
+        <Text as="span" type="text" color="black">Caractere especial</Text>
       </li>
       <li :class="validPassword.number ? 'validated' : ''">
-        <Text as="span" type="text" color="black"> Número </Text>
+        <Text as="span" type="text" color="black">Número</Text>
       </li>
       <li :class="validPassword.minEightCharacters ? 'validated' : ''">
-        <Text as="span" type="text" color="black"> Mínimo 8 caracteres </Text>
+        <Text as="span" type="text" color="black">Mínimo 8 caracteres</Text>
       </li>
     </ul>
   </div>

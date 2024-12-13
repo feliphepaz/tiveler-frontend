@@ -15,7 +15,7 @@
           Saiba mais
         </CustomLink>
         <NuxtLink to="/cadastro">
-          <CTA type="medium" highlight="high"> Experimente agora mesmo </CTA>
+          <CTA type="medium" highlight="high">Experimente agora mesmo</CTA>
         </NuxtLink>
       </ul>
     </div>

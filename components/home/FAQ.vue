@@ -1,7 +1,7 @@
 <template>
   <section class="faq-layout">
     <div class="container">
-      <Text as="h2" type="title" color="black"> Perguntas frequentes </Text>
+      <Text as="h2" type="title" color="black">Perguntas frequentes</Text>
       <ul class="list">
         <li>
           <Dropdown response="Lorem ipsum dolor">O que é a Tiveler?</Dropdown>
@@ -10,19 +10,19 @@
           <Dropdown response="Lorem ipsum dolor">Quanto custa?</Dropdown>
         </li>
         <li>
-          <Dropdown response="Lorem ipsum dolor"
-            >O que eu posso fazer com a Tiveler?</Dropdown
-          >
+          <Dropdown response="Lorem ipsum dolor">
+            O que eu posso fazer com a Tiveler?
+          </Dropdown>
         </li>
         <li>
-          <Dropdown response="Lorem ipsum dolor"
-            >Não sou professor. Posso usar a Tiveler?</Dropdown
-          >
+          <Dropdown response="Lorem ipsum dolor">
+            Não sou professor. Posso usar a Tiveler?
+          </Dropdown>
         </li>
         <li>
-          <Dropdown response="Lorem ipsum dolor"
-            >Como entro em contato?</Dropdown
-          >
+          <Dropdown response="Lorem ipsum dolor">
+            Como entro em contato?
+          </Dropdown>
         </li>
       </ul>
     </div>
