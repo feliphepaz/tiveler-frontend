@@ -1,45 +1,7 @@
 <template>
-  <p
-    v-if="!as || as === 'p'"
-    :class="`text-component ${type} ${variation} ${color}`"
-  >
+  <component :is="as" :class="`text-component ${type} ${variation} ${color}`">
     <slot />
-  </p>
-
-  <span
-    v-if="as === 'span'"
-    :class="`text-component ${type} ${variation} ${color}`"
-  >
-    <slot />
-  </span>
-
-  <h1
-    v-if="as === 'h1'"
-    :class="`text-component ${type} ${variation} ${color}`"
-  >
-    <slot />
-  </h1>
-
-  <h2
-    v-if="as === 'h2'"
-    :class="`text-component ${type} ${variation} ${color}`"
-  >
-    <slot />
-  </h2>
-
-  <h3
-    v-if="as === 'h3'"
-    :class="`text-component ${type} ${variation} ${color}`"
-  >
-    <slot />
-  </h3>
-
-  <h4
-    v-if="as === 'h4'"
-    :class="`text-component ${type} ${variation} ${color}`"
-  >
-    <slot />
-  </h4>
+  </component>
 </template>
 
 <script setup lang="ts">
@@ -67,6 +29,7 @@
   }
 
   withDefaults(defineProps<Props>(), {
+    as: 'p',
     variation: 'none',
   })
 </script>
@@ -137,7 +100,8 @@
 
     &.text.highlight-cta,
     &.current-text.highlight-cta {
-      font-weight: $weight-extra-bold;
+      font-size: 18px;
+      font-weight: $weight-bold;
     }
 
     &.text.underline,
