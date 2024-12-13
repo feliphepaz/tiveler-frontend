@@ -74,19 +74,19 @@
       width: 100%;
       border: none;
       padding: 20px 60px 20px 20px;
-      background: var(--color-gray);
+      background: $color-gray;
       cursor: pointer;
-      transition: var(--transition-simple);
+      transition: $transition-simple;
 
       &:hover {
-        background: var(--color-black);
+        background: $color-black;
 
         :deep(.text-component) {
-          color: var(--color-white);
+          color: $color-white;
         }
 
         svg path {
-          stroke: var(--color-white);
+          stroke: $color-white;
         }
       }
 
@@ -94,19 +94,19 @@
         position: absolute;
         right: 20px;
         opacity: 0;
-        transition: var(--transition-simple);
+        transition: $transition-simple;
 
-        @media (max-width: 768px) {
+        @include mobile {
           width: 20px;
           height: 20px;
         }
       }
 
       &.dropdown-disabled {
-        background: var(--color-black);
+        background: $color-black;
 
         :deep(.text-component) {
-          color: var(--color-white);
+          color: $color-white;
         }
 
         .less {
@@ -121,12 +121,12 @@
 
     .response {
       display: none;
-      background: var(--color-black);
+      background: $color-black;
       padding: 20px;
 
       &.dropdown-activated {
         display: block;
-        animation: showDropdown var(--transition-simple) forwards;
+        animation: showDropdown $transition-simple forwards;
       }
     }
   }

@@ -139,7 +139,7 @@
 
         &:hover {
           svg {
-            border: var(--border-small);
+            border: $border-small;
           }
 
           :deep(.text-component) {
@@ -150,9 +150,9 @@
         :deep(.text-component) {
           display: none;
           width: 200px;
-          background: var(--color-blue);
+          background: $color-blue;
           padding: 10px;
-          border-radius: var(--radius-10);
+          border-radius: $radius-10;
           position: absolute;
           top: -10px;
           left: 20px;
@@ -166,7 +166,7 @@
             height: 0;
             border-top: 4px solid transparent;
             border-bottom: 4px solid transparent;
-            border-right: 4px solid var(--color-blue);
+            border-right: 4px solid $color-blue;
           }
         }
       }
@@ -175,29 +175,29 @@
     input,
     select,
     textarea {
-      font-family: var(--font);
-      font-weight: var(--weight-medium);
-      background: var(--color-white);
+      font-family: $font;
+      font-weight: $weight-medium;
+      background: $color-white;
       font-size: 16px;
       line-height: 120%;
       padding: 12px 14px;
-      color: var(--color-black);
-      border: var(--border-default);
-      transition: var(--transition-default);
+      color: $color-black;
+      border: $border-default;
+      transition: $transition-default;
 
       &::placeholder {
-        color: var(--color-black-20);
+        color: $color-black-20;
       }
 
       &:active,
       &:focus {
-        border: var(--border-hover);
-        background: var(--color-gray);
+        border: $border-hover;
+        background: $color-gray;
         outline: none;
       }
 
       &:disabled {
-        background: var(--color-gray);
+        background: $color-gray;
       }
     }
 
@@ -218,12 +218,12 @@
         -webkit-appearance: none;
         -o-appearance: none;
         padding: 0px;
-        border: var(--border-default);
-        background: var(--color-white);
+        border: $border-default;
+        background: $color-white;
         margin: 0px;
 
         &:checked {
-          background: var(--color-blue);
+          background: $color-blue;
         }
       }
 
@@ -249,13 +249,13 @@
           display: block;
           width: 10px;
           height: 10px;
-          background: var(--color-black-20);
-          border-radius: var(--radius-circle);
+          background: $color-black-20;
+          border-radius: $radius-circle;
         }
 
         &.validated {
           &:before {
-            background: var(--color-green);
+            background: $color-green;
           }
         }
       }

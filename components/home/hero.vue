@@ -49,7 +49,7 @@
       }
     }
 
-    @media (max-width: 1024px) {
+    @include tablet {
       .container {
         :deep(h1) {
           max-width: 580px;

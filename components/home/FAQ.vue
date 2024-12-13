@@ -40,7 +40,7 @@
       gap: 30px;
     }
 
-    @media (max-width: 1024px) {
+    @include tablet {
       margin: 140px 0;
     }
   }

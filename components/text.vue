@@ -73,55 +73,55 @@
 
 <style lang="scss" scoped>
   .text-component {
-    transition: var(--transition-default);
+    transition: $transition-default;
 
     &.title {
-      font-family: var(--font);
-      font-weight: var(--weight-extra-bold);
+      font-family: $font;
+      font-weight: $weight-extra-bold;
       font-size: 48px;
       line-height: 120%;
 
-      @media (max-width: 1024px) {
+      @include tablet {
         font-size: 32px;
       }
     }
 
     &.subtitle {
-      font-family: var(--font);
-      font-weight: var(--weight-medium);
+      font-family: $font;
+      font-weight: $weight-medium;
       font-size: 24px;
-      line-height: 120%;
+      line-height: 140%;
 
-      @media (max-width: 1024px) {
+      @include tablet {
         font-size: 18px;
       }
     }
 
     &.text {
-      font-family: var(--font);
-      font-weight: var(--weight-medium);
+      font-family: $font;
+      font-weight: $weight-medium;
       font-size: 16px;
       line-height: 120%;
     }
 
     &.current-text {
-      font-family: var(--font);
-      font-weight: var(--weight-medium);
+      font-family: $font;
+      font-weight: $weight-medium;
       font-size: 16px;
       line-height: 140%;
       letter-spacing: 0.1px;
     }
 
     &.caption {
-      font-family: var(--font);
-      font-weight: var(--weight-bold);
+      font-family: $font;
+      font-weight: $weight-bold;
       font-size: 12px;
       line-height: 120%;
     }
 
     &.copyright {
-      font-family: var(--font);
-      font-weight: var(--weight-regular);
+      font-family: $font;
+      font-weight: $weight-regular;
       font-size: 12px;
       line-height: 120%;
     }
@@ -132,12 +132,12 @@
     &.current-text.highlight,
     &.subtitle :deep(strong),
     &.subtitle.highlight {
-      font-weight: var(--weight-bold);
+      font-weight: $weight-bold;
     }
 
     &.text.highlight-cta,
     &.current-text.highlight-cta {
-      font-weight: var(--weight-extra-bold);
+      font-weight: $weight-extra-bold;
     }
 
     &.text.underline,
@@ -147,43 +147,43 @@
     }
 
     &.white {
-      color: var(--color-white);
+      color: $color-white;
     }
 
     &.gray {
-      color: var(--color-gray);
+      color: $color-gray;
     }
 
     &.black-20 {
-      color: var(--color-black-20);
+      color: $color-black-20;
     }
 
     &.black {
-      color: var(--color-black);
+      color: $color-black;
     }
 
     &.linear-horizontal {
-      color: var(--color-linear-horizontal);
+      color: $color-linear-horizontal;
     }
 
     &.linear-vertical {
-      color: var(--color-linear-vertical);
+      color: $color-linear-vertical;
     }
 
     &.blue {
-      color: var(--color-blue);
+      color: $color-blue;
     }
 
     &.yellow {
-      color: var(--color-yellow);
+      color: $color-yellow;
     }
 
     &.green {
-      color: var(--color-green);
+      color: $color-green;
     }
 
     &.red {
-      color: var(--color-red);
+      color: $color-red;
     }
   }
 </style>

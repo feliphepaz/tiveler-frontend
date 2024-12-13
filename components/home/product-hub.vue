@@ -22,12 +22,12 @@
               <img :src="notebook" alt="Ícone de caderno" />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
-              Obtenha o relatório de cada aula ou sessão
+              Obtenha o relatório de cada aula
             </Text>
           </div>
           <Text type="current-text" color="black">
             Te damos a facilidade de visualizar todas as informações das aulas
-            ou sessões passadas.
+            passadas.
           </Text>
         </li>
         <li>
@@ -96,7 +96,7 @@
 
           &:hover {
             .benefit-head .icon {
-              background: var(--color-black-20);
+              background: $color-black-20;
             }
           }
 
@@ -113,8 +113,8 @@
               width: 94px;
               height: 94px;
               padding: 20px;
-              background: var(--color-gray);
-              transition: var(--transition-default);
+              background: $color-gray;
+              transition: $transition-default;
             }
           }
         }
@@ -125,13 +125,13 @@
       }
     }
 
-    @media (max-width: 1024px) {
+    @include tablet {
       .container {
         gap: 100px;
       }
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       .container {
         flex-direction: column;
         gap: 80px;

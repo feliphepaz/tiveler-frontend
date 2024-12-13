@@ -169,9 +169,9 @@
     z-index: 999;
     width: 100%;
     padding: 20px 0px;
-    background: var(--color-white);
-    box-shadow: var(--shadow-default);
-    transition: var(--transition-simple);
+    background: $color-white;
+    box-shadow: $shadow-default;
+    transition: $transition-simple;
 
     .container {
       display: flex;
@@ -213,19 +213,19 @@
           justify-content: center;
           width: 32px;
           height: 32px;
-          background: var(--color-white);
+          background: $color-white;
           cursor: pointer;
 
           svg {
             flex: none;
 
             path {
-              transition: var(--transition-simple);
+              transition: $transition-simple;
             }
           }
 
           &.menu-activated svg path {
-            fill: var(--color-red);
+            fill: $color-red;
           }
         }
       }
@@ -243,23 +243,23 @@
       li
       :deep(.custom-link-component)
       svg {
-      animation: showArrow var(--transition-simple) forwards;
+      animation: showArrow $transition-simple forwards;
     }
 
     &.menu-scrolled {
       .container .header-left .menu ul li :deep(.custom-link-component) svg {
-        animation: hiddenArrow var(--transition-simple) forwards;
+        animation: hiddenArrow $transition-simple forwards;
       }
     }
 
-    @media (max-width: 1024px) {
+    @include tablet {
       .container {
         .header-left {
           .menu {
             display: none;
             flex-direction: column;
             gap: 40px;
-            background: var(--color-gray);
+            background: $color-gray;
             width: calc(100% + 20px);
             padding: 20px 40px 40px 40px;
             position: absolute;
@@ -280,7 +280,7 @@
                   display: block;
                   width: calc(100% + 20px);
                   height: 1px;
-                  background: var(--color-white);
+                  background: $color-white;
                 }
 
                 :deep(.custom-link-component) {
@@ -317,15 +317,15 @@
       }
 
       &.menu-mobile .container .header-left .menu {
-        animation: showMenuMobile var(--transition-simple) forwards;
+        animation: showMenuMobile $transition-simple forwards;
       }
 
       &.menu-desktop .container .header-left .menu {
-        animation: hiddenMenuMobile var(--transition-simple) forwards;
+        animation: hiddenMenuMobile $transition-simple forwards;
       }
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       .container {
         .header-left {
           .logo {

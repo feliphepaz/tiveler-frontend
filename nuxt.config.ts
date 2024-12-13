@@ -2,7 +2,17 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  css: ['@/assets/main.scss'],
+  css: ['@/assets/scss/global.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData:
+            '@use "@/assets/scss/vars.scss" as *; @use "@/assets/scss/mixins.scss" as *;',
+        },
+      },
+    },
+  },
   modules: [
     [
       '@nuxtjs/google-fonts',

@@ -1,0 +1,29 @@
+$color-white: #ffffff;
+$color-gray: #f2f2f2;
+$color-black-20: rgba(0, 0, 0, 0.2);
+$color-black: #000000;
+$color-linear-horizontal: linear-gradient(to right, #000000, #0460d9);
+$color-linear-vertical: linear-gradient(#000000, #0460d9);
+$color-blue: #0460d9;
+$color-yellow: #f2e205;
+$color-green: #9abf49;
+$color-red: #f21d2f;
+
+$weight-extra-bold: 800;
+$weight-bold: 700;
+$weight-medium: 500;
+$weight-regular: 400;
+
+$border-default: 2px solid #0460d9;
+$border-hover: 2px solid #000000;
+$border-small: 1px solid #0460d9;
+
+$font: 'Noto Sans', Arial, Helvetica, sans-serif;
+
+$radius-10: 10px;
+$radius-circle: 100%;
+
+$transition-default: 0.4s;
+$transition-simple: 0.2s;
+
+$shadow-default: 0px 8px 20px rgba(0, 0, 0, 0.2);

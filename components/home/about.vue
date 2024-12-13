@@ -35,7 +35,7 @@
 <style lang="scss" scoped>
   .about-layout {
     margin: 180px 0 160px 0;
-    background: var(--color-gray);
+    background: $color-gray;
 
     .container {
       display: flex;
@@ -56,7 +56,7 @@
       }
     }
 
-    @media (max-width: 1024px) {
+    @include tablet {
       margin: 160px 0 140px 0;
 
       .container {
@@ -64,7 +64,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       .container {
         flex-direction: column;
         gap: 0px;

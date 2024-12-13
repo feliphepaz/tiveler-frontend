@@ -55,10 +55,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-blue);
+    background: $color-blue;
     border: none;
-    border-radius: var(--radius-10);
-    transition: var(--transition-default);
+    border-radius: $radius-10;
+    transition: $transition-default;
     cursor: pointer;
 
     &.default {
@@ -69,18 +69,18 @@
     }
 
     &.simple {
-      transition: var(--transition-simple);
+      transition: $transition-simple;
 
       &:hover,
       &:active {
-        background: var(--color-black);
+        background: $color-black;
 
         &.light {
-          background: var(--color-black-20);
+          background: $color-black-20;
         }
 
         :deep(.text-component) {
-          color: var(--color-white);
+          color: $color-white;
         }
       }
     }
@@ -89,10 +89,10 @@
       &:hover,
       &:active {
         transform: scale(1.08);
-        background: var(--color-yellow);
+        background: $color-yellow;
 
         :deep(.text-component) {
-          color: var(--color-blue);
+          color: $color-blue;
         }
       }
     }
@@ -124,11 +124,11 @@
     }
 
     &.big.dark.nav-back {
-      background: var(--color-black-20);
+      background: $color-black-20;
     }
 
     &.light {
-      background: var(--color-white);
+      background: $color-white;
     }
   }
 </style>
