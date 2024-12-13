@@ -78,8 +78,8 @@
 </template>
 
 <script setup lang="ts">
-  import { useWindowSize } from '~/composables/useWindowSize.'
-  import { useWindowScroll } from '~/composables/useWindowScroll'
+  import { useWindowSize } from '@/composables/window/size'
+  import { useWindowScroll } from '@/composables/window/scroll'
   import logo from '@/assets/logos/logo.svg'
 
   const { width } = useWindowSize()
