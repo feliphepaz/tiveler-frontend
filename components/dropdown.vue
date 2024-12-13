@@ -2,7 +2,7 @@
   <div class="dropdown-component">
     <button
       :class="`dropdown-${activeDropdown ? 'disabled' : 'activated'}`"
-      @click="() => activeDropdown = !activeDropdown"
+      @click="() => (activeDropdown = !activeDropdown)"
     >
       <Text type="subtitle" color="black">
         <slot />
@@ -16,8 +16,8 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 15H30" stroke="black" stroke-width="2"/>
-        <path d="M15 30L15 -1.07288e-06" stroke="black" stroke-width="2"/>
+        <path d="M0 15H30" stroke="black" stroke-width="2" />
+        <path d="M15 30L15 -1.07288e-06" stroke="black" stroke-width="2" />
       </svg>
 
       <svg
@@ -28,7 +28,7 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 15H30" stroke="white" stroke-width="2"/>
+        <path d="M0 15H30" stroke="white" stroke-width="2" />
       </svg>
     </button>
     <div

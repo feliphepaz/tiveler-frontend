@@ -6,7 +6,8 @@
       </Text>
 
       <Text type="subtitle" color="black">
-        Faça parte do jeito certo de gerenciar seus alunos. Faça parte do que é moderno.
+        Faça parte do jeito certo de gerenciar seus alunos. Faça parte do que é
+        moderno.
       </Text>
 
       <ul class="ctas-list">
@@ -14,9 +15,7 @@
           Saiba mais
         </CustomLink>
         <NuxtLink to="/cadastro">
-          <CTA type="medium" highlight="high">
-            Experimente agora mesmo
-          </CTA>
+          <CTA type="medium" highlight="high"> Experimente agora mesmo </CTA>
         </NuxtLink>
       </ul>
     </div>

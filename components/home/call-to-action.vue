@@ -10,9 +10,7 @@
         Lembrando, que é <strong>gratuito</strong> 🤩
       </Text>
       <NuxtLink to="/cadastro">
-        <CTA type="medium" highlight="high">
-          Experimente agora mesmo
-        </CTA>
+        <CTA type="medium" highlight="high"> Experimente agora mesmo </CTA>
       </NuxtLink>
     </div>
   </section>

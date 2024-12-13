@@ -5,18 +5,13 @@
     <div class="container">
       <div class="header-left">
         <NuxtLink to="/" class="logo">
-          <img
-            :src="logo"
-            alt="Tiveler"
-          />
+          <img :src="logo" alt="Tiveler" />
         </NuxtLink>
 
         <nav class="menu">
           <ul>
             <li>
-              <CustomLink to="/" type="redirect">
-                Início
-              </CustomLink>
+              <CustomLink to="/" type="redirect"> Início </CustomLink>
             </li>
 
             <li>
@@ -32,17 +27,13 @@
             </li>
 
             <li>
-              <CustomLink to="/contato" type="redirect">
-                Contato
-              </CustomLink>
+              <CustomLink to="/contato" type="redirect"> Contato </CustomLink>
             </li>
           </ul>
 
           <div class="header-ctas-mobile">
             <NuxtLink to="/login">
-              <CTA type="small" theme="light" highlight="simple">
-                Entrar
-              </CTA>
+              <CTA type="small" theme="light" highlight="simple"> Entrar </CTA>
             </NuxtLink>
 
             <NuxtLink to="/cadastro">
@@ -75,14 +66,10 @@
 
         <div class="header-ctas-desktop">
           <NuxtLink to="/login">
-            <CTA type="small" theme="light" highlight="simple">
-              Entrar
-            </CTA>
+            <CTA type="small" theme="light" highlight="simple"> Entrar </CTA>
           </NuxtLink>
           <NuxtLink to="/cadastro">
-            <CTA type="small" highlight="simple">
-              Experimente agora mesmo
-            </CTA>
+            <CTA type="small" highlight="simple"> Experimente agora mesmo </CTA>
           </NuxtLink>
         </div>
       </div>
@@ -289,7 +276,7 @@
                 width: 100%;
 
                 &::after {
-                  content: "";
+                  content: '';
                   display: block;
                   width: calc(100% + 20px);
                   height: 1px;

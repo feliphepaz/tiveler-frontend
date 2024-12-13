@@ -5,26 +5,21 @@
         <li>
           <div class="benefit-head">
             <div class="icon">
-              <img
-                :src="student"
-                alt="Ícone de estudante"
-              />
+              <img :src="student" alt="Ícone de estudante" />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
               Acompanhe o progresso de seus alunos
             </Text>
           </div>
           <Text type="current-text" color="black">
-            Com a nossa ferramenta, você pode acompanhar todo o desenvolvimento do seu aluno.
+            Com a nossa ferramenta, você pode acompanhar todo o desenvolvimento
+            do seu aluno.
           </Text>
         </li>
         <li>
           <div class="benefit-head">
             <div class="icon">
-              <img
-                :src="notebook"
-                alt="Ícone de caderno"
-              />
+              <img :src="notebook" alt="Ícone de caderno" />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
               Obtenha o relatório de cada aula ou sessão
@@ -38,10 +33,7 @@
         <li>
           <div class="benefit-head">
             <div class="icon">
-              <img
-                :src="blackboard"
-                alt="Ícone de lousa"
-              />
+              <img :src="blackboard" alt="Ícone de lousa" />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
               Saiba quais conteúdos já foram passados
@@ -55,10 +47,7 @@
         <li>
           <div class="benefit-head">
             <div class="icon">
-              <img
-                :src="calculator"
-                alt="Ícone de calculadora"
-              />
+              <img :src="calculator" alt="Ícone de calculadora" />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
               Descubra de forma fácil quanto você já lucrou!
@@ -72,10 +61,7 @@
       </ul>
       <div class="picture">
         <div>
-          <img
-            :src="personNotebook"
-            alt="Pessoa utilizando o notebook"
-          />
+          <img :src="personNotebook" alt="Pessoa utilizando o notebook" />
         </div>
       </div>
     </div>

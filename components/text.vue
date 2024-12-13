@@ -1,25 +1,43 @@
 <template>
-  <p v-if="(!as || as === 'p')" :class="`text-component ${type} ${variation} ${color}`">
+  <p
+    v-if="!as || as === 'p'"
+    :class="`text-component ${type} ${variation} ${color}`"
+  >
     <slot />
   </p>
 
-  <span v-if="(as === 'span')" :class="`text-component ${type} ${variation} ${color}`">
+  <span
+    v-if="as === 'span'"
+    :class="`text-component ${type} ${variation} ${color}`"
+  >
     <slot />
   </span>
 
-  <h1 v-if="(as === 'h1')" :class="`text-component ${type} ${variation} ${color}`">
+  <h1
+    v-if="as === 'h1'"
+    :class="`text-component ${type} ${variation} ${color}`"
+  >
     <slot />
   </h1>
 
-  <h2 v-if="(as === 'h2')" :class="`text-component ${type} ${variation} ${color}`">
+  <h2
+    v-if="as === 'h2'"
+    :class="`text-component ${type} ${variation} ${color}`"
+  >
     <slot />
   </h2>
 
-  <h3 v-if="(as === 'h3')" :class="`text-component ${type} ${variation} ${color}`">
+  <h3
+    v-if="as === 'h3'"
+    :class="`text-component ${type} ${variation} ${color}`"
+  >
     <slot />
   </h3>
 
-  <h4 v-if="(as === 'h4')" :class="`text-component ${type} ${variation} ${color}`">
+  <h4
+    v-if="as === 'h4'"
+    :class="`text-component ${type} ${variation} ${color}`"
+  >
     <slot />
   </h4>
 </template>
@@ -27,13 +45,29 @@
 <script setup lang="ts">
   interface Props {
     as?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4'
-    type: 'title' | 'subtitle' | 'text' | 'current-text' | 'caption' | 'copyright'
+    type:
+      | 'title'
+      | 'subtitle'
+      | 'text'
+      | 'current-text'
+      | 'caption'
+      | 'copyright'
     variation?: 'none' | 'highlight' | 'highlight-cta' | 'underline'
-    color: 'white' | 'gray' | 'black-20' | 'black' | 'linear-horizontal' | 'linear-vertical' | 'blue' | 'yellow' | 'green'| 'red'
+    color:
+      | 'white'
+      | 'gray'
+      | 'black-20'
+      | 'black'
+      | 'linear-horizontal'
+      | 'linear-vertical'
+      | 'blue'
+      | 'yellow'
+      | 'green'
+      | 'red'
   }
 
   withDefaults(defineProps<Props>(), {
-    variation: 'none'
+    variation: 'none',
   })
 </script>
 

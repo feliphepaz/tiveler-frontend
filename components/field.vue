@@ -18,13 +18,7 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="7"
-            cy="8"
-            r="6.5"
-            stroke="black"
-            strokeOpacity="0.2"
-          />
+          <circle cx="7" cy="8" r="6.5" stroke="black" strokeOpacity="0.2" />
           <path
             d="M5.62 9.724C5.62 9.46 5.656 9.224 5.728 9.016C5.8 8.808 5.916 8.612 6.076 8.428C6.244 8.244 6.464 8.056 6.736 7.864C6.976 7.688 7.168 7.532 7.312 7.396C7.464 7.26 7.572 7.124 7.636 6.988C7.708 6.852 7.744 6.7 7.744 6.532C7.744 6.276 7.648 6.084 7.456 5.956C7.272 5.82 7.012 5.752 6.676 5.752C6.34 5.752 6.008 5.804 5.68 5.908C5.352 6.012 5.016 6.152 4.672 6.328L4.036 5.044C4.428 4.828 4.852 4.652 5.308 4.516C5.764 4.38 6.264 4.312 6.808 4.312C7.64 4.312 8.284 4.512 8.74 4.912C9.204 5.312 9.436 5.82 9.436 6.436C9.436 6.764 9.384 7.048 9.28 7.288C9.176 7.528 9.02 7.752 8.812 7.96C8.604 8.16 8.344 8.376 8.032 8.608C7.8 8.776 7.62 8.92 7.492 9.04C7.364 9.16 7.276 9.276 7.228 9.388C7.188 9.5 7.168 9.64 7.168 9.808V10.156H5.62V9.724ZM5.428 12.16C5.428 11.792 5.528 11.536 5.728 11.392C5.928 11.24 6.172 11.164 6.46 11.164C6.74 11.164 6.98 11.24 7.18 11.392C7.38 11.536 7.48 11.792 7.48 12.16C7.48 12.512 7.38 12.768 7.18 12.928C6.98 13.08 6.74 13.156 6.46 13.156C6.172 13.156 5.928 13.08 5.728 12.928C5.528 12.768 5.428 12.512 5.428 12.16Z"
             fill="black"
@@ -38,29 +32,18 @@
     </label>
 
     <input
-      v-if="(type === 'input' || type === 'new-password')"
+      v-if="type === 'input' || type === 'new-password'"
       :name="name"
       :id="name"
       :type="variation === 'password' && showPassword ? 'text' : variation"
       @keyup="(e) => type === 'new-password' && validatePassword(e)"
     />
 
-    <select
-      v-if="type === 'select'"
-      :name="name"
-      :id="name"
-    />
+    <select v-if="type === 'select'" :name="name" :id="name" />
 
-    <textarea
-      v-if="type === 'textarea'"
-      :name="name"
-      :id="name"
-    />
+    <textarea v-if="type === 'textarea'" :name="name" :id="name" />
 
-    <div
-      v-if="variation === 'password'"
-      class="show-password"
-    >
+    <div v-if="variation === 'password'" class="show-password">
       <input
         type="checkbox"
         id="show-password"
@@ -69,9 +52,7 @@
         :checked="showPassword"
       />
       <label for="show-password">
-        <Text type="caption" color="black">
-          Mostrar senha
-        </Text>
+        <Text type="caption" color="black"> Mostrar senha </Text>
       </label>
     </div>
 
@@ -79,34 +60,21 @@
       {{ alert }}
     </Text>
 
-    <ul
-      v-if="type === 'new-password'"
-      class="password-requirements"
-    >
+    <ul v-if="type === 'new-password'" class="password-requirements">
       <li :class="validPassword.upperCase ? 'validated' : ''">
-        <Text as="span" type="text" color="black">
-          Letra maiúscula
-        </Text>
+        <Text as="span" type="text" color="black"> Letra maiúscula </Text>
       </li>
       <li :class="validPassword.lowerCase ? 'validated' : ''">
-        <Text as="span" type="text" color="black">
-          Letra minúscula
-        </Text>
+        <Text as="span" type="text" color="black"> Letra minúscula </Text>
       </li>
       <li :class="validPassword.specialCharacter ? 'validated' : ''">
-        <Text as="span" type="text" color="black">
-          Caractere especial
-        </Text>
+        <Text as="span" type="text" color="black"> Caractere especial </Text>
       </li>
       <li :class="validPassword.number ? 'validated' : ''">
-        <Text as="span" type="text" color="black">
-          Número
-        </Text>
+        <Text as="span" type="text" color="black"> Número </Text>
       </li>
       <li :class="validPassword.minEightCharacters ? 'validated' : ''">
-        <Text as="span" type="text" color="black">
-          Mínimo 8 caracteres
-        </Text>
+        <Text as="span" type="text" color="black"> Mínimo 8 caracteres </Text>
       </li>
     </ul>
   </div>
@@ -128,7 +96,7 @@
     lowerCase: false,
     specialCharacter: false,
     number: false,
-    minEightCharacters: false
+    minEightCharacters: false,
   })
 
   function validatePassword(e: KeyboardEvent) {
@@ -139,18 +107,18 @@
     const hasNumber = /\d/.test(target.value)
     const minEightCharacters = target.value.length >= 8
 
-    validPassword.value = ({
+    validPassword.value = {
       upperCase: hasUpperCase,
       lowerCase: hasLowerCase,
       specialCharacter: hasSpecialCharacter,
       number: hasNumber,
-      minEightCharacters: minEightCharacters
-    })
+      minEightCharacters: minEightCharacters,
+    }
   }
 
   withDefaults(defineProps<Props>(), {
     variation: 'text',
-    size: 'medium'
+    size: 'medium',
   })
 </script>
 
@@ -190,7 +158,7 @@
           left: 20px;
 
           &::before {
-            content: "";
+            content: '';
             position: absolute;
             left: -4px;
             top: 15px;
@@ -242,7 +210,7 @@
       display: flex;
       gap: 8px;
 
-      input[type="checkbox"] {
+      input[type='checkbox'] {
         display: block;
         width: 18px;
         height: 18px;
@@ -259,7 +227,7 @@
         }
       }
 
-      input[type="checkbox"],
+      input[type='checkbox'],
       label {
         cursor: pointer;
       }
@@ -277,7 +245,7 @@
         gap: 10px;
 
         &:before {
-          content: "";
+          content: '';
           display: block;
           width: 10px;
           height: 10px;

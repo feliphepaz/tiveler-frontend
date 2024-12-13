@@ -1,7 +1,5 @@
 <template>
-  <button
-    :class="`cta-component ${type} ${variation} ${theme} ${highlight}`"
-  >
+  <button :class="`cta-component ${type} ${variation} ${theme} ${highlight}`">
     <svg
       v-if="type === 'big' && theme === 'dark' && variation === 'nav-back'"
       width="13"
@@ -16,7 +14,9 @@
     <Text
       as="span"
       :type="type === 'big' ? 'subtitle' : 'text'"
-      :variation="type === 'medium' || type === 'large' ? 'highlight-cta' : 'highlight'"
+      :variation="
+        type === 'medium' || type === 'large' ? 'highlight-cta' : 'highlight'
+      "
       :color="theme === 'dark' ? 'white' : 'blue'"
     >
       <slot />
@@ -46,7 +46,7 @@
   withDefaults(defineProps<Props>(), {
     variation: 'none',
     theme: 'dark',
-    highlight: 'default'
+    highlight: 'default',
   })
 </script>
 
