@@ -7,13 +7,7 @@
 <script setup lang="ts">
   interface Props {
     as?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4'
-    type:
-      | 'title'
-      | 'subtitle'
-      | 'text'
-      | 'current-text'
-      | 'caption'
-      | 'copyright'
+    type: 'title' | 'subtitle' | 'text' | 'caption' | 'copyright'
     variation?: 'none' | 'highlight' | 'highlight-cta' | 'underline'
     color:
       | 'white'
@@ -64,15 +58,7 @@
       font-family: $font;
       font-weight: $weight-medium;
       font-size: 16px;
-      line-height: 120%;
-    }
-
-    &.current-text {
-      font-family: $font;
-      font-weight: $weight-medium;
-      font-size: 16px;
       line-height: 140%;
-      letter-spacing: 0.1px;
     }
 
     &.caption {
@@ -91,22 +77,20 @@
 
     &.text :deep(strong),
     &.text.highlight,
-    &.current-text :deep(strong),
-    &.current-text.highlight,
     &.subtitle :deep(strong),
     &.subtitle.highlight {
       font-weight: $weight-bold;
     }
 
-    &.text.highlight-cta,
-    &.current-text.highlight-cta {
+    &.text.highlight-cta {
       font-size: 18px;
       font-weight: $weight-bold;
     }
 
     &.text.underline,
-    &.current-text.underline,
-    &.caption.underline {
+    &.caption.underline,
+    :deep(a) {
+      color: currentColor;
       text-decoration: underline;
     }
 

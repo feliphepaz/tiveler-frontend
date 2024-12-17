@@ -11,7 +11,7 @@
         <Text as="h2" type="subtitle" variation="highlight" color="black">
           Quem somos?
         </Text>
-        <Text as="p" type="current-text" color="black">
+        <Text as="p" type="text" color="black">
           Nascido em São Paulo, no berço das startups, a Tiveler vem com o
           propósito de ser o software mais utilizado no dia a dia de
           profissionais da educação, facilitando a gestão das aulas, alunos e
@@ -34,7 +34,7 @@
 
 <style lang="scss" scoped>
   .about-layout {
-    margin: 180px 0 160px 0;
+    margin: 180px 0 140px 0;
     background: $color-gray;
 
     .container {
@@ -57,7 +57,7 @@
     }
 
     @include tablet {
-      margin: 160px 0 140px 0;
+      margin: 160px 0 120px 0;
 
       .container {
         gap: 100px;

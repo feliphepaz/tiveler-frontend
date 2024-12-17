@@ -34,7 +34,7 @@
     <div
       :class="`response dropdown-${activeDropdown ? 'activated' : 'disabled'}`"
     >
-      <Text type="current-text" color="white">
+      <Text type="text" color="white">
         {{ response }}
       </Text>
     </div>

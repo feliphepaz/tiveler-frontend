@@ -4,7 +4,7 @@
       <Text as="h2" type="subtitle" variation="highlight" color="black">
         Gostou do que viu até aqui?
       </Text>
-      <Text as="p" type="subtitle" color="black">
+      <Text type="subtitle" color="black">
         Experimente a nossa plataforma!
         <br />
         Lembrando, que é

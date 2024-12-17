@@ -31,7 +31,7 @@
 
 <style lang="scss" scoped>
   .faq-layout {
-    margin: 160px 0;
+    margin: 140px 0;
 
     .list {
       display: flex;
@@ -41,7 +41,7 @@
     }
 
     @include tablet {
-      margin: 140px 0;
+      margin: 120px 0;
     }
   }
 </style>

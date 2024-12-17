@@ -33,15 +33,14 @@
 
     <input
       v-if="type === 'input' || type === 'new-password'"
+      v-bind="$attrs"
       :name="name"
       :id="name"
       :type="variation === 'password' && showPassword ? 'text' : variation"
       @keyup="(e) => type === 'new-password' && validatePassword(e)"
     />
 
-    <select v-if="type === 'select'" :name="name" :id="name" />
-
-    <textarea v-if="type === 'textarea'" :name="name" :id="name" />
+    <component v-else :is="type" v-bind="$attrs" :name="name" :id="name" />
 
     <div v-if="variation === 'password'" class="show-password">
       <input
@@ -81,6 +80,10 @@
 </template>
 
 <script setup lang="ts">
+  defineOptions({
+    inheritAttrs: false,
+  })
+
   interface Props {
     name: string
     type: 'input' | 'select' | 'textarea' | 'new-password'
@@ -89,6 +92,11 @@
     size?: 'medium' | 'big'
     alert?: string
   }
+
+  withDefaults(defineProps<Props>(), {
+    variation: 'text',
+    size: 'medium',
+  })
 
   const showPassword = ref(false)
   const validPassword = ref({
@@ -115,11 +123,6 @@
       minEightCharacters: minEightCharacters,
     }
   }
-
-  withDefaults(defineProps<Props>(), {
-    variation: 'text',
-    size: 'medium',
-  })
 </script>
 
 <style lang="scss" scoped>

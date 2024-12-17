@@ -2,60 +2,17 @@
   <section class="product-hub-layout" id="produto">
     <div class="container">
       <ul class="benefits">
-        <li>
+        <li v-for="(benefit, index) in benefits" :key="index">
           <div class="benefit-head">
             <div class="icon">
-              <img :src="student" alt="Ícone de estudante" />
+              <img :src="benefit.icon.src" :alt="benefit.icon.alt" />
             </div>
             <Text as="h3" type="subtitle" variation="highlight" color="black">
-              Acompanhe o progresso de seus alunos
+              {{ benefit.title }}
             </Text>
           </div>
-          <Text type="current-text" color="black">
-            Com a nossa ferramenta, você pode acompanhar todo o desenvolvimento
-            do seu aluno.
-          </Text>
-        </li>
-        <li>
-          <div class="benefit-head">
-            <div class="icon">
-              <img :src="notebook" alt="Ícone de caderno" />
-            </div>
-            <Text as="h3" type="subtitle" variation="highlight" color="black">
-              Obtenha o relatório de cada aula
-            </Text>
-          </div>
-          <Text type="current-text" color="black">
-            Te damos a facilidade de visualizar todas as informações das aulas
-            passadas.
-          </Text>
-        </li>
-        <li>
-          <div class="benefit-head">
-            <div class="icon">
-              <img :src="blackboard" alt="Ícone de lousa" />
-            </div>
-            <Text as="h3" type="subtitle" variation="highlight" color="black">
-              Saiba quais conteúdos já foram passados
-            </Text>
-          </div>
-          <Text type="current-text" color="black">
-            Cansado de esquecer quais conteúdos já foram passados? Aqui, você
-            não perde nada!
-          </Text>
-        </li>
-        <li>
-          <div class="benefit-head">
-            <div class="icon">
-              <img :src="calculator" alt="Ícone de calculadora" />
-            </div>
-            <Text as="h3" type="subtitle" variation="highlight" color="black">
-              Descubra de forma fácil quanto você já lucrou!
-            </Text>
-          </div>
-          <Text type="current-text" color="black">
-            Através da nossa plataforma, você tem acesso aos dados de suas
-            receitas e movimentações.
+          <Text type="text" color="black">
+            {{ benefit.description }}
           </Text>
         </li>
       </ul>
@@ -70,10 +27,49 @@
 
 <script setup lang="ts">
   import student from '@/assets/icons/student.svg'
+  import notebook from '@/assets/icons/notebook.svg'
   import blackboard from '@/assets/icons/blackboard.svg'
   import calculator from '@/assets/icons/calculator.svg'
-  import notebook from '@/assets/icons/notebook.svg'
   import personNotebook from '@/assets/pictures/person-notebook.jpg'
+
+  const benefits = [
+    {
+      title: 'Acompanhe o progresso de seus alunos',
+      description:
+        'Com a nossa ferramenta, você pode acompanhar todo o desenvolvimento do seu aluno.',
+      icon: {
+        src: student,
+        alt: 'Ícone de estudante',
+      },
+    },
+    {
+      title: 'Obtenha o relatório de cada aula',
+      description:
+        'Te damos a facilidade de visualizar todas as informações das aulas passadas.',
+      icon: {
+        src: notebook,
+        alt: 'Ícone de caderno',
+      },
+    },
+    {
+      title: 'Saiba quais conteúdos já foram passados',
+      description:
+        'Cansado de esquecer quais conteúdos já foram passados? Aqui, você não perde nada!',
+      icon: {
+        src: blackboard,
+        alt: 'Ícone de lousa',
+      },
+    },
+    {
+      title: 'Descubra de forma fácil quanto você já lucrou!',
+      description:
+        'Através da nossa plataforma, você tem acesso aos dados de suas receitas e movimentações.',
+      icon: {
+        src: calculator,
+        alt: 'Ícone de calculadora',
+      },
+    },
+  ]
 </script>
 
 <style lang="scss" scoped>

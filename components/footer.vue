@@ -25,7 +25,7 @@
         </ul>
 
         <div class="email">
-          <NuxtLink to="mailto:contato@tiveler.com">
+          <NuxtLink to="mailto:contato@tiveler.com" class="address">
             <Text type="text" color="black">contato@tiveler.com</Text>
           </NuxtLink>
           <CustomLink to="/contato" type="redirect" icon="show" weight="bold">
@@ -77,6 +77,10 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      .address:hover {
+        text-decoration: underline;
+      }
 
       @include mobile {
         align-items: center;
