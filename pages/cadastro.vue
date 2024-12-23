@@ -21,8 +21,8 @@
       display: flex;
       gap: 140px;
 
-      .content,
-      .form {
+      .content-layout,
+      .form-layout {
         width: 50%;
       }
 
@@ -34,8 +34,8 @@
         flex-direction: column;
         gap: 40px;
 
-        .content,
-        .form {
+        .content-layout,
+        .form-layout {
           width: 100%;
         }
       }

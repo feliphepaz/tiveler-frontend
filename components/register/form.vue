@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="form-layout">
     <form>
       <Field name="name" type="input" size="big" placeholder="Seu nome aqui">
         Nome
@@ -36,7 +36,7 @@
 </template>
 
 <style lang="scss" scoped>
-  .form {
+  .form-layout {
     form {
       display: flex;
       flex-direction: column;

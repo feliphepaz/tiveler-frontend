@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content-layout">
     <Text as="h1" type="title" color="black">
       Você está a alguns passos de dizer adeus às planilhas e cadernos!
     </Text>
@@ -43,7 +43,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .content {
+  .content-layout {
     .subtitle {
       margin: 30px 0 40px;
     }
