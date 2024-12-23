@@ -192,7 +192,6 @@
         color: $color-black-20;
       }
 
-      &:active,
       &:focus {
         border: $border-hover;
         background: $color-gray;

@@ -62,8 +62,7 @@
     cursor: pointer;
 
     &.default {
-      &:hover,
-      &:active {
+      &:hover {
         transform: scale(1.08);
       }
     }
@@ -71,8 +70,7 @@
     &.simple {
       transition: $transition-simple;
 
-      &:hover,
-      &:active {
+      &:hover {
         background: $color-black;
 
         &.light {
@@ -86,8 +84,7 @@
     }
 
     &.high {
-      &:hover,
-      &:active {
+      &:hover {
         transform: scale(1.08);
         background: $color-yellow;
 
