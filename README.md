@@ -1,6 +1,6 @@
-# Tiveler Frontend
+# Tiveler (front-end)
 
-Frontend do SaaS Tiveler, uma plataforma criada para ajudar professores a organizar suas aulas, planejar atividades e manter o controle do material pedagógico de forma simples e prática.
+Front-end do SaaS Tiveler, uma plataforma criada para ajudar professores a organizar suas aulas, planejar atividades e manter o controle do material pedagógico de forma simples e prática.
 
 ## ✨ Sobre o projeto
 
@@ -19,7 +19,6 @@ O Tiveler é uma solução pensada para otimizar a rotina de docentes, centraliz
 - Vue 3
 - TypeScript
 - Sass
-- Google Fonts
 
 ## 📁 Estrutura do projeto
 
@@ -102,5 +101,5 @@ Este repositório representa o frontend do projeto Tiveler e está em desenvolvi
 ## 🔗 Links úteis
 
 - Site em produção: https://tiveler-frontend.vercel.app
+- Repositório do back-end: https://github.com/feliphepaz/tiveler-backend
 - Documentação do Nuxt: https://nuxt.com/docs/getting-started/introduction
-
