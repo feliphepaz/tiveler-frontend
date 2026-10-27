@@ -1,75 +1,106 @@
-# Nuxt 3 Minimal Starter
+# Tiveler Frontend
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Frontend do SaaS Tiveler, uma plataforma criada para ajudar professores a organizar suas aulas, planejar atividades e manter o controle do material pedagógico de forma simples e prática.
 
-## Setup
+## ✨ Sobre o projeto
 
-Make sure to install the dependencies:
+O Tiveler é uma solução pensada para otimizar a rotina de docentes, centralizando ferramentas de organização e visualização do conteúdo escolar. A interface foi desenvolvida em Nuxt 3 com Vue 3 e Sass, com foco em uma experiência clara, moderna e responsiva.
+
+### Principais objetivos
+
+- Organizar aulas e disciplinas em um único lugar
+- Facilitar o planejamento pedagógico
+- Melhorar a experiência de cadastro e navegação do usuário
+- Exibir uma interface comercial amigável para a proposta de SaaS
+
+## 🛠️ Stack
+
+- Nuxt 3
+- Vue 3
+- TypeScript
+- Sass
+- Google Fonts
+
+## 📁 Estrutura do projeto
 
 ```bash
-# npm
-npm install
+.
+├── app.vue
+├── assets/
+│   └── scss/
+├── components/
+│   ├── home/
+│   ├── register/
+│   ├── CTA.vue
+│   ├── contact-bar.vue
+│   ├── custom-link.vue
+│   ├── dropdown.vue
+│   ├── field.vue
+│   ├── footer.vue
+│   ├── header.vue
+│   ├── list-item.vue
+│   ├── option.vue
+│   ├── text.vue
+│   └── ...
+├── composables/
+├── pages/
+│   ├── index.vue
+│   └── cadastro.vue
+├── public/
+├── server/
+├── .gitignore
+├── .prettierrc.json
+├── nuxt.config.ts
+├── package.json
+├── tsconfig.json
+├── yarn.lock
+├── README.md
+└── ...
+```
 
-# pnpm
-pnpm install
+## 🚀 Começando
 
-# yarn
+### Pré-requisitos
+
+- Node.js 18+
+- Yarn
+
+### Instalação
+
+```bash
 yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Executando em desenvolvimento
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
 yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+A aplicação ficará disponível em:
 
 ```bash
-# npm
-npm run build
+http://localhost:3000
+```
 
-# pnpm
-pnpm run build
+## 🏗️ Build para produção
 
-# yarn
+```bash
 yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Para visualizar a versão de produção localmente:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
 yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 📌 Observações
+
+Este repositório representa o frontend do projeto Tiveler e está em desenvolvimento contínuo. O projeto está estruturado para evoluir junto com a API e as demais partes do SaaS.
+
+## 🔗 Links úteis
+
+- Site em produção: https://tiveler-frontend.vercel.app
+- Documentação do Nuxt: https://nuxt.com/docs/getting-started/introduction
+
